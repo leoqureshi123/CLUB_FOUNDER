@@ -1,0 +1,78 @@
+@keyframes snake-animation {
+  0% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0.5rem;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  25% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  25.1% {
+    top: 0;
+    left: unset;
+    right: 0;
+    width: 0.5rem;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    top: 0;
+    left: unset;
+    right: 0;
+    width: 0.5rem;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50.1% {
+    top: unset;
+    bottom: 0;
+    left: unset;
+    right: 0;
+    width: 0;
+    height: 0.5rem;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  75% {
+    top: unset;
+    bottom: 0;
+    left: 0;
+    right: unset;
+    width: 100%;
+    height: 0.5rem;
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  75.1% {
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 0.5rem;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  100% {
+    top: 0;
+    bottom: unset;
+    left: 0;
+    width: 0.5rem;
+    height: 100%;
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+}
+
+.snake-animation {
+  animation: snake-animation 4s linear infinite;
+}
