@@ -31,7 +31,7 @@ const ProfileCard = () => {
   ];
 
   const roles = [
-    { title: "Amazon Orient Ambassador", location: "United Kingdom" },
+    { title: "Amazon Emerald Partner", location: "UK, USA, UAE" },
     { title: "Shopify Country Director", location: "UK, USA, UAE" },
     { title: "Fiverr Director", location: "International" },
   ];

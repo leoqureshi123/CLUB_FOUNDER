@@ -60,6 +60,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 text-white">
                     <h3 className="text-xl font-bold">Dr. Yousuf</h3>
+                    <p className="mt-1">Ceo & Founder</p>
                     <p className="mt-1">E-Commerce Expert & Entrepreneur</p>
                   </div>
                 </div>
@@ -83,6 +84,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 text-white">
                     <h3 className="text-xl font-bold">Dr. Sidra Tul Muntaha</h3>
+                    <p className="mt-1">Co-Founder</p>
                     <p className="mt-1">Physiotherapist & Health Specialist</p>
                   </div>
                 </div>

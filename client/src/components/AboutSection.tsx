@@ -41,7 +41,7 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-6 text-base md:text-lg text-foreground/80">
               <p data-testid="text-about-line1">
-                Led by  Yousuf, we create and scale global e-commerce brands.
+                Led by  Dr Muhammad Yousaf, we create and scale global e-commerce brands.
               With 23+ successful stores, we turn ideas into profitable digital ventures.
             Innovation, design, and growth define everything we do.
              </p>
