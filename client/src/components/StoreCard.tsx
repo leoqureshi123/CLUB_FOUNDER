@@ -24,6 +24,12 @@ import womensImage from '@/assets/Womens_boutique_clothing_display_daca52f7-f5ER
 import nightwearImage from '@/assets/Luxury_nightwear_store_display_43828ba3-Bt5dpIXs.png';
 import techImage from '@/assets/Tech_accessories_store_display_b31d4a92-VS9Yfiue.png';
 import aabirahImage from '@/assets/WhatsApp Image 2025-11-05 at 4.57.39 PM-uqWHheLF.jpeg';
+import image1 from '@/assets/image1.png';
+import image2 from '@/assets/image2.png';
+import image3 from '@/assets/image3.png';
+import sincityImage from '@/assets/SINCITY.png';
+import sincity2Image from '@/assets/SINCITY2.png';
+import nightcity3Image from '@/assets/NIGHTCITY3.png';
 
 interface StoreCardProps {
   name: string;
@@ -59,6 +65,9 @@ const imageMap: Record<string, string> = {
   nightwear: nightwearImage,
   nightwear2: techImage,
   aabirah: aabirahImage,
+  sincity: sincityImage,
+  sincity2: sincity2Image,
+  nightcity3: nightcity3Image,
   // Additional mappings for missing image types
   Watches: watchesImage,
   Abaya: abayaImage,
@@ -83,6 +92,9 @@ const imageMap: Record<string, string> = {
   Womens: womensImage,
   Nightwear: nightwearImage,
   Nighties: techImage,
+  image1: image1,
+  image2: image2,
+  image3: image3,
   // Fallback mappings
   'Leak Proof UnderGarments': fitnessImage,
   'Women Clothing': womensImage,

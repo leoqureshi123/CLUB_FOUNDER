@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Mail, Phone, Award, Zap, BookOpen, Stethoscope, MessageCircle } from "lucide-react"
 import doctorImage from "../assets/DOCTOR.png"
+import Navigation from '@/components/Navigation';
 
 export default function ProfilePage() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -101,6 +102,9 @@ export default function ProfilePage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
+      <Navigation />
+      {/* Gap between navbar and content */}
+      <div className="h-8"></div>
       {/* Animated Background Elements */}
       <div className="fixed inset-0 pointer-events-none opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-primary to-transparent rounded-full blur-3xl animate-float"></div>

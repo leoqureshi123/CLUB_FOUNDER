@@ -30,4 +30,9 @@ export const stores: Store[] = [
   { id: '21', name: 'Dression Store', url: 'https://dressionstore.com', category: 'Lingerie/Nighties', imageType: 'coffee' },
   { id: '22', name: 'Durole', url: 'https://durole.com', category: 'Lingerie & Panties', imageType: 'mensshoes' },
   { id: '23', name: 'Aabirah Boutique', url: 'https://www.aabirah.boutique', category: 'Fashion', imageType: 'aabirah' },
+  { id: '24', name: 'Naked Dresses', url: 'https://www.nakeddresses.com', category: 'Fashion', imageType: 'image1' },
+  { id: '25', name: 'Naked Vice', url: 'https://nakedvice.com.au', category: 'Fashion', imageType: 'image2' },
+  { id: '26', name: 'NA-KD', url: 'https://www.na-kd.com', category: 'Fashion', imageType: 'image3' },
+  { id: '27', name: 'Tfi Lingerie', url: 'https://tfilingerie.com', category: 'Lingerie', imageType: 'sincity' },
+  { id: '28', name: 'Luuvra Lingerie', url: 'https://luuvra.myshopify.com', category: 'Lingerie', imageType: 'nightcity3' },
 ];

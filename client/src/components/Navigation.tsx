@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { useLocation } from 'wouter';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [gradientClass, setGradientClass] = useState('text-purple-500');
+  const [location, navigate] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,12 +29,29 @@ export default function Navigation() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    // Check if we're on the home page
+    if (location === '/') {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        setIsMobileMenuOpen(false);
+      }
+    } else {
+      // If not on home page, navigate to home page and then scroll to section
+      navigate('/');
+      // We'll need to scroll after the page loads, so we'll add a small delay
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
       setIsMobileMenuOpen(false);
     }
   };
@@ -41,7 +60,6 @@ export default function Navigation() {
     { id: 'about', label: 'About' },
     { id: 'features', label: 'Features' },
     { id: 'stores', label: 'Stores' },
-   
   ];
 
   return (
@@ -54,7 +72,13 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <button
-              onClick={() => scrollToSection('hero')}
+              onClick={() => {
+                if (location === '/') {
+                  scrollToSection('hero');
+                } else {
+                  navigate('/');
+                }
+              }}
               className="text-xl lg:text-2xl font-bold text-foreground hover-elevate active-elevate-2 px-3 py-2 rounded-md transition-all"
               data-testid="button-logo"
             >
@@ -75,6 +99,15 @@ export default function Navigation() {
                   {link.label}
                 </Button>
               ))}
+              
+              {/* Our Teams Button */}
+              <Button
+                variant="ghost"
+                onClick={() => navigate('/teams')}
+                className="text-base text-white hover:bg-white/20"
+              >
+                Our Teams
+              </Button>
             </div>
 
             <Button
@@ -104,6 +137,18 @@ export default function Navigation() {
                 {link.label}
               </Button>
             ))}
+            
+            {/* Mobile Our Teams Button */}
+            <Button
+              variant="ghost"
+              onClick={() => {
+                navigate('/teams');
+                setIsMobileMenuOpen(false);
+              }}
+              className="w-full text-lg text-white hover:bg-white/20"
+            >
+              Our Teams
+            </Button>
           </div>
         </div>
       )}

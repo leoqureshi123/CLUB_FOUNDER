@@ -18,7 +18,7 @@ export default function StoresSection() {
             Our Portfolio
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            23+ successful e-commerce stores across fashion, technology, and lifestyle
+            25+ successful e-commerce stores across fashion, technology, and lifestyle
           </p>
         </div>
 

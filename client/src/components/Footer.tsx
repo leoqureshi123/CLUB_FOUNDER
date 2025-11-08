@@ -122,7 +122,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-primary/20 text-center">
           <p className="text-sm text-foreground/60">
-            © {new Date().getFullYear()} Founders Club by Yousuf. All rights reserved.
+            © {new Date().getFullYear()} Founders Club by Dr Muhammad Yousuf. All rights reserved.
           </p>
         </div>
       </div>

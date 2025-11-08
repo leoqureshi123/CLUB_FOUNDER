@@ -8,6 +8,7 @@ import amazonLogo from "@/assets/amazon-logo.png";
 import fiverrLogo from "@/assets/fiverr-logo.png";
 import shopifyLogo from "@/assets/shopify-logo.png";
 import facebookLogo from "@/assets/Facbook.png";
+import Navigation from '@/components/Navigation';
 
 const ProfileCard = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -37,7 +38,10 @@ const ProfileCard = () => {
   ];
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-4 md:p-8 overflow-hidden">
+    <div className="relative min-h-screen  flex items-center justify-center p-4 md:p-8 overflow-hidden" id="top">
+      <div className="mb-12">
+        <Navigation />
+      </div>
       {/* Background effects similar to Home.tsx */}
       <div className="absolute inset-0 liquid-ether opacity-20" />
       
@@ -57,7 +61,7 @@ const ProfileCard = () => {
         ))}
       </div>
       
-      <div className="relative z-10 w-full max-w-6xl">
+      <div className="relative mt-12 z-10 w-full max-w-6xl">
         {/* Main Profile Card */}
         <Card className={`professional-card overflow-hidden ${isLoaded ? "animate-fade-in" : "opacity-0"}`}>
           <div className="grid lg:grid-cols-[400px_1fr] gap-0">
@@ -69,14 +73,14 @@ const ProfileCard = () => {
                   <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl"></div>
                   <img
                     src={profilePhoto}
-                    alt="Dr. Yousuf - E-Commerce Expert"
+                    alt="Dr. Muhammad Yousuf - E-Commerce Expert"
                     className="relative w-full h-full object-cover rounded-full border-4 border-background shadow-xl"
                   />
                 </div>
 
                 {/* Name & Title */}
                 <div className="text-center space-y-2">
-                  <h1 className="text-3xl font-bold text-foreground">Dr. Yousuf</h1>
+                  <h1 className="text-3xl font-bold text-foreground">Dr. Muhammad Yousuf</h1>
                   <p className="text-muted-foreground font-medium">E-Commerce Ambassador</p>
                   <p className="text-sm text-muted-foreground">Entrepreneur • Doctor</p>
                 </div>
