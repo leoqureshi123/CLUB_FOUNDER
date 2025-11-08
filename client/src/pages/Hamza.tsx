@@ -6,7 +6,6 @@ import whatsappIcon from "@/assets/whatsApp.png"
 import hamzaImage from "@/assets/HAMZA.jpg"
 import TeamMemberCard from '@/components/TeamMemberCard'
 import Navigation from '@/components/Navigation'
-import Footer from '@/components/Footer';
 
 
 export default function MalikHamaza() {
