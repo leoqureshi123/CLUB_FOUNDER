@@ -7,7 +7,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import doctorImage from "@/assets/DOCTOR.png";
 import hamzaImage from "@/assets/HAMZA.jpg";
 import kinzaImage from "@/assets/KINZA.jpeg";
-import amnaImage from "@/assets/AMNA.jpg";
+import amnaImage from "@/assets/Amna.jpg";
 import maheenImage from "@/assets/MAHEEN.jpeg";
 import noorImage from "@/assets/NOOR.png";
 

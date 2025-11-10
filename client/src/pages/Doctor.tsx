@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Mail, Phone, Award, Zap, BookOpen, Stethoscope, MessageCircle } from "lucide-react"
-import doctorImage from "../assets/DOCTOR.png"
+import doctorImage from "@/assets/DOCTOR.png"
 import Navigation from '@/components/Navigation';
 
 export default function ProfilePage() {

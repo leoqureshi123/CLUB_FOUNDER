@@ -1,6 +1,6 @@
 import { ExternalLink, Mail, MessageCircle } from "lucide-react"
 import { useEffect, useState } from "react"
-import amnaImage from "@/assets/Amna.jpg"
+import amnaImage from "@/assets/AMNA.jpg"
 import amnaResume from "@/assets/My Resume.pdf_20241003_004315_0000.pdf"
 import whatsappIcon from "@/assets/whatsApp.png"
 import Navigation from '@/components/Navigation'
